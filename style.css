@@ -1,0 +1,277 @@
+/****** Default Styles *****/
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:focus, :active {
+  outline: none;
+}
+
+a:focus, a:active {
+  outline: none;
+}
+
+nav, footer, header, aside {
+  display: block;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+
+/********* Font style********/
+.wrapper {
+  max-width: 1800px;
+  margin: 0 auto;
+  /********* Hero Section ********/
+}
+
+.wrapper .hero {
+  background: url("./images/modern-living-room-interior-with-sofa-green-plants-lamp-table-dark-wall-background 1.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+  position: relative;
+  z-index: 1;
+  margin-bottom: 100px;
+}
+
+.wrapper .hero::before {
+  content: "";
+  position: absolute;
+  height: 208px;
+  width: 100%;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0)), color-stop(83.65%, #FFFFFF));
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #FFFFFF 83.65%);
+  bottom: -20px;
+}
+
+.navbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin-bottom: 90px;
+  padding-top: 65px;
+}
+
+.navbar_logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.navbar_logo_text {
+  color: #FFFFFF;
+  margin-left: 21px;
+  font-size: 32px;
+  line-height: 39px;
+}
+
+.navbar_links ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.navbar_links ul li {
+  margin-right: 68px;
+  font-size: 24px;
+  line-height: 28px;
+  color: #fff;
+}
+
+.navbar_links ul li:hover {
+  background: -webkit-gradient(linear, left top, right top, from(#2AF598), to(#009EFD));
+  background: linear-gradient(90deg, #2AF598 0%, #009EFD 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+  cursor: pointer;
+}
+
+.navbar_links_link {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}
+
+.navbar_checkout {
+  position: relative;
+}
+
+.navbar_checkout img {
+  width: 32px;
+  height: 37px;
+}
+
+.navbar_checkout_counter {
+  position: absolute;
+  top: 3px;
+  right: -7px;
+  width: 16px;
+  height: 16px;
+  background: -webkit-gradient(linear, left top, right top, from(#2AF598), to(#009EFD));
+  background: linear-gradient(90deg, #2AF598 0%, #009EFD 100%);
+  border-radius: 50%;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+}
+
+.hero-title {
+  max-width: 1110px;
+  margin: 0 auto;
+  font-weight: 700;
+  font-size: 82px;
+  line-height: 96px;
+  text-align: center;
+  color: #fff;
+  margin-bottom: 24px;
+}
+
+.hero-text {
+  max-width: 583px;
+  margin: 0 auto;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 36px;
+  text-align: center;
+  color: #fff;
+}
+
+.hero-union {
+  width: 205px;
+  height: 103px;
+  border-radius: 24px;
+  background: rgba(255, 253, 253, 0.2);
+  border: 1px solid #FFFFFF;
+  -webkit-backdrop-filter: blur(4px);
+          backdrop-filter: blur(4px);
+  position: absolute;
+  right: 40px;
+  top: 45%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  color: #fff;
+  padding: 20px;
+}
+
+.hero_union_price {
+  font-size: 32px;
+  line-height: 38px;
+  margin-bottom: 12px;
+}
+
+.hero_union_description {
+  font-size: 16px;
+  line-height: 19px;
+}
+
+/********  Service Section ****/
+.service {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding-bottom: 100px;
+}
+
+.service-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.service-text {
+  margin-left: 24px;
+}
+
+.service_text-title {
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 38px;
+  color: #081323;
+  margin-bottom: 12px;
+}
+
+.service_text-description {
+  color: #828282;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 23px;
+}
+/*# sourceMappingURL=style.css.map */

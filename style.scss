@@ -195,7 +195,8 @@ line-height: 39px;
 .service {
     display: flex;
     justify-content: space-around;
-    padding-bottom: 100px;
+    //remove padding when ready
+    padding: 100px;
 }
 .service-item {
     display: flex;
@@ -223,4 +224,118 @@ line-height: 39px;
     font-weight: 500;
     font-size: 20px;
     line-height: 23px;
+}
+
+/********  Best Seller Section ****/
+
+.best_seller {
+    display: flex;
+    justify-content: center;
+    //if needed ?
+    padding: 200px 0;
+    margin-top: 300px;
+}
+.best_seller-text {
+    max-width: 363px;
+    align-self: center;
+}
+.best_seller_text-title {
+    font-weight: 500;
+    font-size: 64px;
+    line-height: 75px;
+    color: #081323;
+    margin-bottom: 42px;
+}
+.best_seller_text-description {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28px;
+    color: #4F4F4F;
+    gap: 20px;
+    display: flex;
+    align-items: center;
+         img{
+            width: 24px;
+            height: 21px;
+            
+            }
+}
+
+.best_seller-items {
+    display: flex;
+    justify-content: space-between;
+    align-self: end;
+    gap: 32px;
+    position: relative;
+}
+.best_seller_items-item {
+    
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    flex-shrink: 1;
+    filter: drop-shadow(0px 4px 30px rgba(221, 218, 218, 0.25));
+    
+
+    &:before{
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        padding: 20px;
+        height: 511px;
+        background:#C1D0E4; ;
+        z-index: -1;
+        border-radius: 50px;
+        
+
+    }
+    
+
+}
+.best_seller_items-item-img{
+    margin-bottom:42px ;
+    flex-grow: 1;
+
+}
+
+
+.best_seller_items-item-info{
+   // width: 329px;
+    height: 260.73px;
+    border-radius: 50px ;
+    padding: 39px;
+    background-color: #fff ;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.best_seller_item_title {
+    font-size: 32px;
+    line-height: 38px;
+    
+}
+.best_seller_item_rating {
+    flex-grow: 1;
+    
+    
+}
+.best_seller_item_price {
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 38px;
+    color: #081323;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+.best_seller_item_btn {
+
+    img{
+        width: 59px;
+        height: 59px;
+    }
 }

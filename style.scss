@@ -203,7 +203,6 @@ line-height: 39px;
 .service {
     display: flex;
     justify-content: space-around;
-    //remove padding when ready
     margin-bottom: 152px;
 }
 .service-item {
@@ -310,7 +309,6 @@ line-height: 39px;
 
 
 .best_seller_items-item-info{
-   // width: 329px;
     height: 260.73px;
     border-radius: 50px ;
     padding: 39px;
@@ -451,7 +449,6 @@ line-height: 39px;
     border: 1px solid #FFFFFF;
     
     border-radius: 50px;
-    //padding: 24px 30px;
     //background: rgba(255, 255, 255, 0.2);
     background: #081323;
     
@@ -460,22 +457,10 @@ line-height: 39px;
        background:#081323 ;
        border-radius: 50px;
        margin-right: auto;
-       color: #fff;
        font-size: 20px;
        flex-grow: 2;
        line-height: 23px;
        text-indent: 30px;
-      
-        
-       
-        
-        
-
-      
-
-       
-        
-
     }
 }
 .subscribe_btn {
@@ -489,7 +474,7 @@ line-height: 39px;
     text-align: center;
     font-size: 20px;
     line-height: 23px;
-    color: #fff;
+    
 }
 .footer_items {
     display: flex;
@@ -512,7 +497,7 @@ line-height: 39px;
         font-weight: 500;
         font-size: 16px;
         margin-bottom: 17px;
-        color: #fff;
+        
     }
 }
 hr{
@@ -522,6 +507,5 @@ hr{
 .footer_rigths {
     font-size: 24px;
     line-height: 28px;
-    color: #fff;
     text-align: center;
 }

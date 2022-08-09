@@ -74,23 +74,27 @@ h1, h2, h3, h4, h5, h6 {
 
 /********* Font style********/
 .wrapper {
-  max-width: 1800px;
   margin: 0 auto;
-  /********* Hero Section ********/
 }
 
-.wrapper .hero {
+.container {
+  max-width: 1920px;
+  margin: 0 auto;
+  font-family: "Works Sans";
+}
+
+/********* Hero Section ********/
+.hero {
   background: url("./images/modern-living-room-interior-with-sofa-green-plants-lamp-table-dark-wall-background 1.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   min-height: 100vh;
   position: relative;
-  z-index: 1;
-  margin-bottom: 100px;
+  margin-bottom: 107px;
 }
 
-.wrapper .hero::before {
+.hero::before {
   content: "";
   position: absolute;
   height: 208px;
@@ -177,6 +181,7 @@ h1, h2, h3, h4, h5, h6 {
   border-radius: 50%;
   font-size: 14px;
   line-height: 16px;
+  font-weight: 800;
   text-align: center;
 }
 
@@ -244,7 +249,7 @@ h1, h2, h3, h4, h5, h6 {
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  padding: 100px;
+  margin-bottom: 152px;
 }
 
 .service-item {
@@ -283,8 +288,8 @@ h1, h2, h3, h4, h5, h6 {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding: 200px 0;
-  margin-top: 300px;
+  padding: 0 10px;
+  margin-bottom: 182px;
 }
 
 .best_seller-text {
@@ -386,12 +391,22 @@ h1, h2, h3, h4, h5, h6 {
 .best_seller_item_title {
   font-size: 32px;
   line-height: 38px;
+  margin-bottom: 9px;
 }
 
 .best_seller_item_rating {
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 5px;
+}
+
+.best_seller_item_rating img {
+  width: 19px;
+  height: 19px;
 }
 
 .best_seller_item_price {
@@ -417,7 +432,7 @@ h1, h2, h3, h4, h5, h6 {
 
 /********* Referance section **********/
 .referance {
-  padding-top: 100px;
+  margin-bottom: 182px;
 }
 
 .referance_title {
@@ -482,5 +497,118 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 64px;
   line-height: 75px;
   color: #fff;
+}
+
+/********* Footer ***********/
+.footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background: linear-gradient(93.99deg, #566270 0.51%, #283444 100%);
+  color: #fff;
+  padding: 130px 100px 20px;
+}
+
+.footer_navigation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 120px;
+  margin-bottom: 52px;
+}
+
+.footer_navigation_newsletter-title {
+  font-size: 48px;
+  line-height: 56px;
+  margin-bottom: 25px;
+}
+
+.footer_navigation_newsletter-input {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 463px;
+  border: 1px solid #FFFFFF;
+  border-radius: 50px;
+  background: #081323;
+}
+
+.footer_navigation_newsletter-input input {
+  height: 71px;
+  background: #081323;
+  border-radius: 50px;
+  margin-right: auto;
+  color: #fff;
+  font-size: 20px;
+  -webkit-box-flex: 2;
+      -ms-flex-positive: 2;
+          flex-grow: 2;
+  line-height: 23px;
+  text-indent: 30px;
+}
+
+.subscribe_btn {
+  margin-right: 12px;
+  display: block;
+  padding: 12px 24px;
+  background: -webkit-gradient(linear, left top, right top, from(#2AF598), to(#009EFD));
+  background: linear-gradient(90deg, #2AF598 0%, #009EFD 100%);
+  border-radius: 50px;
+  width: 145px;
+  height: 47px;
+  text-align: center;
+  font-size: 20px;
+  line-height: 23px;
+  color: #fff;
+}
+
+.footer_items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 89px;
+}
+
+.footer_items-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.footer_items_item-title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 34px;
+  margin-bottom: 34px;
+}
+
+.footer_items_list li {
+  font-weight: 500;
+  font-size: 16px;
+  margin-bottom: 17px;
+  color: #fff;
+}
+
+hr {
+  border: 1px solid #FFFFFF;
+  margin-bottom: 52px;
+}
+
+.footer_rigths {
+  font-size: 24px;
+  line-height: 28px;
+  color: #fff;
+  text-align: center;
 }
 /*# sourceMappingURL=style.css.map */

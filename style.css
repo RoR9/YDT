@@ -245,6 +245,40 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 19px;
 }
 
+.hero_dot-outer {
+  width: 54px;
+  height: 54px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.2);
+  border: 1px solid #FFFFFF;
+  position: relative;
+  display: inline-block;
+  position: absolute;
+  -webkit-backdrop-filter: blur(4px);
+          backdrop-filter: blur(4px);
+}
+
+.hero_dot-inner {
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background-color: #fff;
+  top: 50%;
+  left: 50%;
+  margin: -8px 0 0 -8px;
+}
+
+.hero_dot-top {
+  top: 35%;
+  left: 6.5%;
+}
+
+.hero_dot-bottom {
+  top: 58%;
+  left: 11%;
+}
+
 /********  Service Section ****/
 .service {
   display: -webkit-box;

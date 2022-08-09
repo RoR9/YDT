@@ -1,5 +1,5 @@
 /****** Default Styles *****/
-@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@700&family=Work+Sans:wght@400;500;600;700&display=swap");
 * {
   padding: 0;
   margin: 0;
@@ -32,6 +32,7 @@ html, body {
   -ms-text-size-adjust: 100%;
   -moz-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
+  overflow-x: hidden;
 }
 
 input, button, textarea {
@@ -127,6 +128,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .navbar_logo_text {
+  font-family: "Inter";
+  font-weight: 700;
   color: #FFFFFF;
   margin-left: 21px;
   font-size: 32px;

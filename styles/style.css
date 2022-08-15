@@ -546,7 +546,7 @@ header::before {
 }
 
 /********* Footer ***********/
-.footer {
+footer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -588,7 +588,7 @@ header::before {
 
 .footer-navigation__input input {
   height: 71px;
-  background: #081323;
+  background: inherit;
   border-radius: 50px;
   margin-right: auto;
   font-size: 20px;
@@ -600,7 +600,7 @@ header::before {
   color: #fff;
 }
 
-.subscribe_btn {
+.subscribe-btn {
   margin-right: 12px;
   display: block;
   padding: 12px 24px;

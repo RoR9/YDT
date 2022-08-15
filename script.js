@@ -3,9 +3,4 @@ const checkoutCounter=document.querySelector(".navbar-checkout__counter")
 
 let total=0
 
-bestSellerBtns.forEach(btn=>btn.addEventListener("click",function(e){
-    e.preventDefault()
-    total++
-    return checkoutCounter.textContent=total
-    
-}))
+bestSellerBtns.forEach(btn=>btn.addEventListener("click",()=>checkoutCounter.textContent=++total))

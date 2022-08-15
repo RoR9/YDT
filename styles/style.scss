@@ -57,6 +57,7 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 
 
 /********* Hero Section ********/
+
 header {
     background: url("../images/modern-living-room-interior-with-sofa-green-plants-lamp-table-dark-wall-background\ 1.png");
     background-position: center;
@@ -457,7 +458,7 @@ line-height: 39px;
 
 
 /********* Footer ***********/
-.footer {
+footer {
     display: flex;
     flex-direction: column;
     background: linear-gradient(93.99deg, #566270 0.51%, #283444 100%);
@@ -487,7 +488,7 @@ line-height: 39px;
     
     input{
        height: 71px;
-       background:#081323 ;
+       background: inherit;
        border-radius: 50px;
        margin-right: auto;
        font-size: 20px;
@@ -497,7 +498,7 @@ line-height: 39px;
        color: #fff;
     }
 }
-.subscribe_btn {
+.subscribe-btn {
     margin-right: 12px;
     display: block;
     padding: 12px 24px;

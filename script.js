@@ -1,5 +1,5 @@
-const bestSellerBtns=document.querySelectorAll(".best_seller_item_btn")
-const checkoutCounter=document.querySelector(".navbar_checkout_counter")
+const bestSellerBtns=document.querySelectorAll(".best-seller-item__btn")
+const checkoutCounter=document.querySelector(".navbar-checkout__counter")
 
 let total=0
 

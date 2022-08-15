@@ -57,8 +57,8 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 
 
 /********* Hero Section ********/
-.hero {
-    background: url("./images/modern-living-room-interior-with-sofa-green-plants-lamp-table-dark-wall-background\ 1.png");
+header {
+    background: url("../images/modern-living-room-interior-with-sofa-green-plants-lamp-table-dark-wall-background\ 1.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -84,13 +84,13 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
     padding-top: 65px;
 
 }
-.navbar_logo {
+.navbar__logo {
     display: flex;
     align-items: center;
    
 
 }
-.navbar_logo_text {
+.navbar-logo__text {
 font-family: "Inter";
 font-weight: 700;
 color: #FFFFFF;
@@ -98,10 +98,9 @@ margin-left: 21px;
 font-size: 32px;
 line-height: 39px;
 }
-.navbar_links {
-    ul{
+.navbar__links {
         display: flex;
-        li{
+        a{
             margin-right: 68px;
             font-size: 24px;
             line-height: 28px;
@@ -115,13 +114,13 @@ line-height: 39px;
                     cursor: pointer;
             }
         }
-    }
+    
     
 }
 .navbar_links_link {
     align-self: flex-end;
 }
-.navbar_checkout {
+.navbar__checkout {
     position: relative;
     img{
        
@@ -131,7 +130,7 @@ line-height: 39px;
     }
     
 }
-.navbar_checkout_counter {
+.navbar-checkout__counter {
     position: absolute;
     top: 3px;   
     right: -7px;
@@ -144,7 +143,7 @@ line-height: 39px;
     font-weight: 800;
     text-align: center;
 }
-.hero-title {
+.hero__title {
     max-width: 1110px;
     margin: 0 auto;
     font-weight: 700;
@@ -156,7 +155,7 @@ line-height: 39px;
    
     
 }
-.hero-text {
+.hero__text {
     max-width: 583px;
     margin: 0 auto;
     font-weight: 400;
@@ -170,7 +169,7 @@ line-height: 39px;
    
 }
 
-.hero-union {
+.hero__union {
     width: 205px;
     height: 103px;
     border-radius: 24px;
@@ -191,18 +190,18 @@ line-height: 39px;
     
 
 }
-.hero_union_price {
+.hero-union__price {
     font-size: 32px;
     line-height: 38px;
     margin-bottom: 12px;
 }
-.hero_union_description {
+.hero-union__description {
     font-size: 16px;
     line-height: 19px;
 }
 
 
-.hero_dot-outer {
+.hero__dot-outer {
     
     
     width: 54px;
@@ -215,7 +214,7 @@ line-height: 39px;
     position: absolute;
     backdrop-filter: blur(4px);
 }
-.hero_dot-inner {
+.hero__dot-inner {
     position: absolute;
     width: 16px;
     height: 16px;
@@ -226,11 +225,11 @@ line-height: 39px;
     margin: -8px 0 0 -8px;
 }
 
-.hero_dot-top{
+.hero__dot-top{
     top: 35%;
     left: 6.5%;
 }
-.hero_dot-bottom{
+.hero__dot-bottom{
     top:58%;
     left:11%;
 
@@ -242,12 +241,13 @@ line-height: 39px;
     justify-content: space-around;
     margin-bottom: 152px;
 }
-.service-item {
+.service__item {
     display: flex;
     align-items: center;
 
 }
-.service-logo {
+.service_logo {
+    display: block;
 
    
 }
@@ -255,7 +255,7 @@ line-height: 39px;
     margin-left: 24px;
 
 }
-.service_text-title {
+.service-text__title {
     font-weight: 500;
     font-size: 32px;
     line-height: 38px;
@@ -263,7 +263,7 @@ line-height: 39px;
     margin-bottom: 12px;
 
 }
-.service_text-description {
+.service-text__description {
     color: #828282;
     font-weight: 500;
     font-size: 20px;
@@ -272,24 +272,24 @@ line-height: 39px;
 
 /********  Best Seller Section ****/
 
-.best_seller {
+.best-seller {
     display: flex;
     justify-content: center;
     padding: 0 10px;
     margin-bottom: 182px;
 }
-.best_seller-text {
+.best-seller__text {
     max-width: 363px;
     align-self: center;
 }
-.best_seller_text-title {
+.best-seller-text__title {
     font-weight: 500;
     font-size: 64px;
     line-height: 75px;
     color: #081323;
     margin-bottom: 42px;
 }
-.best_seller_text-description {
+.best-seller-text__description {
     font-weight: 500;
     font-size: 24px;
     line-height: 28px;
@@ -297,7 +297,8 @@ line-height: 39px;
     gap: 20px;
     display: flex;
     align-items: center;
-    cursor: pointer;
+    
+
          img{
             width: 24px;
             height: 21px;
@@ -305,14 +306,14 @@ line-height: 39px;
             }
 }
 
-.best_seller-items {
+.best-seller__row {
     display: flex;
     justify-content: space-between;
     align-self: end;
     gap: 32px;
     position: relative;
 }
-.best_seller_items-item {
+.best-seller__item {
     
     display: flex;
     flex-direction: column;
@@ -338,14 +339,14 @@ line-height: 39px;
     
 
 }
-.best_seller_items-item-img{
+.best-seller-item__img{
     margin-bottom:42px ;
     flex-grow: 1;
 
 }
 
 
-.best_seller_items-item-info{
+.best-seller-item-info{
     height: 260.73px;
     border-radius: 50px ;
     padding: 39px;
@@ -355,13 +356,13 @@ line-height: 39px;
 
 }
 
-.best_seller_item_title {
+.best-seller-item__title {
     font-size: 32px;
     line-height: 38px;
     margin-bottom: 9px;
     
 }
-.best_seller_item_rating {
+.best-seller-item__rating {
     flex-grow: 1;
     display: flex;
     gap:5px;
@@ -373,7 +374,7 @@ line-height: 39px;
     
     
 }
-.best_seller_item_price {
+.best-seller-item__price {
     font-weight: 500;
     font-size: 32px;
     line-height: 38px;
@@ -383,8 +384,8 @@ line-height: 39px;
     justify-content: space-between;
     
 }
-.best_seller_item_btn {
-
+.best-seller-item__btn {
+    background-color: #fff;
     img{
         width: 59px;
         height: 59px;
@@ -396,7 +397,7 @@ line-height: 39px;
 .referance {
     margin-bottom: 182px;
 }
-.referance_title {
+.referance__title {
     font-weight: 500;
     font-size: 64px;
     line-height: 75px;
@@ -404,14 +405,14 @@ line-height: 39px;
     text-align: center;
     margin-bottom: 27px;
 }
-.referance_description {
+.referance__description {
     font-size: 24px;
     line-height: 28px;
     color: #4F4F4F;
     text-align: center;
     margin-bottom: 82px;
 }
-.referance_gallery {
+.referance__gallery {
     padding: 10px;
     display: flex;
     justify-content: center;
@@ -422,40 +423,37 @@ line-height: 39px;
     }
     
 }
-.referance_gallery-left {
-}
+
 .referance_gallery-img {
 }
 .img-background {
     margin-bottom: 32px;
     position: relative;
+
+    
     &:hover{
         cursor: pointer;
         &::before{
-            content: "";
+            content: attr(data-text);
             position: absolute;
             top: 0;
             left: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
             width: 100%;
             height: 100%;
             background: rgba(0, 0, 0, 0.3);
-            border-radius: 50px;
-        }
-        &::after{
-            position: absolute;
-            content: "living room";
-            top: 45%;
-            left: 28%;
-            text-align: center;
+            border-radius: 40px;
             font-weight: 600;
             font-size: 64px;
             line-height: 75px;
             color: #fff;
         }
 }
+
 }
-.referance_gallery-right {
-}
+
 
 
 /********* Footer ***********/
@@ -466,20 +464,18 @@ line-height: 39px;
     color: #fff;
     padding: 130px 100px 20px ;
 }
-.footer_navigation {
+.footer__navigation {
     display: flex;
     gap: 120px;
     margin-bottom: 52px;
 }
-.footer_navigation_newsletter {
 
-}
-.footer_navigation_newsletter-title {
+.footer-navigation__title {
     font-size: 48px;
     line-height: 56px;
     margin-bottom: 25px;
 }
-.footer_navigation_newsletter-input {
+.footer-navigation__input {
     display: flex;
     align-items: center;
     width: 463px;
@@ -515,35 +511,39 @@ line-height: 39px;
     color: #fff;
     
 }
-.footer_items {
+.footer__row {
     display: flex;
     gap: 89px;
 }
-.footer_items-item {
+.footer__item {
     display: flex;
     flex-direction: column;
 }
-.footer_items_item-title {
+.footer-item__title {
     font-weight: 700;
     font-size: 24px;
     line-height: 34px;
     margin-bottom: 34px;
     
 }
-.footer_items_list {
+.footer-item__list {
 
     li{
-        font-weight: 500;
-        font-size: 16px;
+        
         margin-bottom: 17px;
         
+    }
+    a{
+        font-weight: 500;
+        font-size: 16px;
+        color: #fff;
     }
 }
 hr{
     border: 1px solid #FFFFFF;
     margin-bottom: 52px;
 }
-.footer_rigths {
+.footer__rigths {
     font-size: 24px;
     line-height: 28px;
     text-align: center;

@@ -4,7 +4,6 @@
   padding: 0;
   margin: 0;
   border: 0;
-  outline: 3px solid limegreen !important;
 }
 
 *, *:before, *:after {
@@ -76,14 +75,10 @@ h1, h2, h3, h4, h5, h6 {
 /********* Font style********/
 .wrapper {
   margin: 0 auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  max-width: 1920px;
 }
 
 .container {
-  width: 1920px;
+  max-width: 1920px;
   margin: 0 auto;
   font-family: "Work Sans";
 }

@@ -4,7 +4,7 @@
     padding: 0;
     margin: 0;
     border: 0;
-    outline: 3px solid limegreen !important;
+    
 }
 *,*:before,*:after{
     -moz-box-sizing: border-box;
@@ -47,16 +47,16 @@ $workSans:"Work Sans";
 
 .wrapper {
     margin:0 auto;
-    display: flex;
+
     
-    max-width: 1920px;
+   
     
     
     
 }
 
 .container{
-    width: 1920px;
+    max-width: 1920px;
     margin:0 auto;
     font-family: $workSans;
    

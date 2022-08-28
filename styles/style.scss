@@ -24,7 +24,7 @@ html,body{
     -ms-text-size-adjust: 100%;
     -moz-text-size-adjust: 100%;
     -webkit-text-size-adjust: 100%;
-    overflow-x: hidden; //Avoid horizontal scroll
+    //overflow-x: hidden; //Avoid horizontal scroll
 }
 input,button,textarea{font-family:inherit;}
 
@@ -45,14 +45,21 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 
 .wrapper {
     margin:0 auto;
+    display: flex;
+    
+    max-width: 1920px;
+    
     
     
 }
 
 .container{
-    max-width: 1920px;
+    width: 1920px;
     margin:0 auto;
     font-family: "Works Sans";
+   
+   
+    
 }
 
 
@@ -101,6 +108,7 @@ line-height: 39px;
 }
 .navbar__links {
         display: flex;
+        
         a{
             margin-right: 68px;
             font-size: 24px;
@@ -143,6 +151,11 @@ line-height: 39px;
     line-height: 16px;
     font-weight: 800;
     text-align: center;
+}
+
+.center{
+    flex-grow: 1;
+    
 }
 .hero__title {
     max-width: 1110px;
@@ -456,6 +469,75 @@ line-height: 39px;
 
 }
 
+/****** Care Section ********/
+.care {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 182px 10px 210px;
+    
+}
+.care__container {
+    
+    
+
+    img{
+        max-width: 100%;
+        //margin-left: 240px;
+        
+    }
+}
+.care__title {
+max-width: 400px;
+font-weight: 500;
+font-size: 64px;
+line-height: 75px;
+color: #081323;
+margin-bottom: 28px;
+
+}
+.care__description {
+font-weight: 400;
+font-size: 24px;
+line-height: 28px;
+color: #4F4F4F;
+margin-bottom: 82px;
+}
+.care__row {
+    max-width: 500px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 32px;
+
+    &:last-child{
+        margin-bottom: 0;
+    }
+
+
+    img{
+        width: 68px;
+        height: 68px;
+        margin-right: 25px;
+
+    }
+}
+.row-care__text {
+
+}
+.row-care__title {
+font-weight: 500;
+font-size: 32px;
+line-height: 38px;
+color: #000000;
+margin-bottom: 8px;
+}
+.row-care__description {
+ font-weight: 400;
+font-size: 20px;
+line-height: 23px;
+color: #4F4F4F;
+}
+
 
 
 /********* Footer ***********/
@@ -550,3 +632,5 @@ hr{
     line-height: 28px;
     text-align: center;
 }
+
+

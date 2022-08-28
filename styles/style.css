@@ -32,7 +32,6 @@ html, body {
   -ms-text-size-adjust: 100%;
   -moz-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
-  overflow-x: hidden;
 }
 
 input, button, textarea {
@@ -76,10 +75,14 @@ h1, h2, h3, h4, h5, h6 {
 /********* Font style********/
 .wrapper {
   margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 1920px;
 }
 
 .container {
-  max-width: 1920px;
+  width: 1920px;
   margin: 0 auto;
   font-family: "Works Sans";
 }
@@ -186,6 +189,12 @@ header::before {
   line-height: 16px;
   font-weight: 800;
   text-align: center;
+}
+
+.center {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
 }
 
 .hero__title {
@@ -544,6 +553,76 @@ header::before {
   line-height: 75px;
   color: #fff;
   font-family: "Work Sans";
+}
+
+/****** Care Section ********/
+.care {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin: 182px 10px 210px;
+}
+
+.care__container img {
+  max-width: 100%;
+}
+
+.care__title {
+  max-width: 400px;
+  font-weight: 500;
+  font-size: 64px;
+  line-height: 75px;
+  color: #081323;
+  margin-bottom: 28px;
+}
+
+.care__description {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 28px;
+  color: #4F4F4F;
+  margin-bottom: 82px;
+}
+
+.care__row {
+  max-width: 500px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 32px;
+}
+
+.care__row:last-child {
+  margin-bottom: 0;
+}
+
+.care__row img {
+  width: 68px;
+  height: 68px;
+  margin-right: 25px;
+}
+
+.row-care__title {
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 38px;
+  color: #000000;
+  margin-bottom: 8px;
+}
+
+.row-care__description {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 23px;
+  color: #4F4F4F;
 }
 
 /********* Footer ***********/

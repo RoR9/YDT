@@ -4,6 +4,7 @@
   padding: 0;
   margin: 0;
   border: 0;
+  outline: 3px solid limegreen !important;
 }
 
 *, *:before, *:after {
@@ -32,6 +33,7 @@ html, body {
   -ms-text-size-adjust: 100%;
   -moz-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
+  overflow-x: hidden;
 }
 
 input, button, textarea {
@@ -289,6 +291,9 @@ header::before {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 20px;
   -ms-flex-pack: distribute;
       justify-content: space-around;
   margin-bottom: 152px;
@@ -331,6 +336,9 @@ header::before {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  max-width: 100%;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -373,12 +381,13 @@ header::before {
 }
 
 .best-seller__row {
+  max-width: 1000px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -ms-flex-item-align: end;
       align-self: end;
   gap: 32px;
@@ -418,6 +427,7 @@ header::before {
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
+  max-width: 100%;
 }
 
 .best-seller-item-info {
@@ -556,6 +566,9 @@ header::before {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 50px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -656,7 +669,7 @@ footer {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 463px;
+  max-width: 463px;
   border: 1px solid #FFFFFF;
   border-radius: 50px;
   background: #081323;
@@ -683,7 +696,7 @@ footer {
   background: -webkit-gradient(linear, left top, right top, from(#2AF598), to(#009EFD));
   background: linear-gradient(90deg, #2AF598 0%, #009EFD 100%);
   border-radius: 50px;
-  width: 145px;
+  max-width: 145px;
   height: 47px;
   text-align: center;
   font-size: 20px;
@@ -734,5 +747,115 @@ hr {
   font-size: 24px;
   line-height: 28px;
   text-align: center;
+}
+
+@media only screen and (max-width: 1400px) {
+  .best-seller__row {
+    max-width: 800px;
+  }
+  .footer__row {
+    gap: 30px;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .footer__navigation {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .footer__row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .hero__union, .hero__dot-outer {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  footer {
+    padding: 50px;
+  }
+  .best-seller__row {
+    max-width: 800px;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .referance__gallery {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  header .navbar {
+    padding: 20px 0 0 0;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    gap: 30px;
+  }
+  header .navbar a {
+    margin-right: 10px;
+  }
+  header .hero__title {
+    font-size: 50px;
+    line-height: 57px;
+  }
+  header .hero__text {
+    font-size: 32px;
+    line-height: 32px;
+    max-width: 600px;
+  }
+}
+
+@media only screen and (max-width: 668px) {
+  footer {
+    padding: 10px;
+  }
+  header::before {
+    height: 30px;
+  }
+  header .navbar {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding: 0 10px;
+    margin-bottom: 30px;
+  }
+  header .hero__title {
+    font-size: 42px;
+    line-height: 42px;
+  }
+  header .hero__text {
+    font-size: 20px;
+    line-height: 20px;
+    max-width: 550px;
+  }
+  header .navbar__checkout {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+  header .navbar__links {
+    -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+            order: 3;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 100%;
+            flex: 0 1 100%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }
 /*# sourceMappingURL=style.css.map */

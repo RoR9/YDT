@@ -4,6 +4,7 @@
     padding: 0;
     margin: 0;
     border: 0;
+    outline: 3px solid limegreen !important;
     
 }
 *,*:before,*:after{
@@ -25,7 +26,7 @@ html,body{
     -ms-text-size-adjust: 100%;
     -moz-text-size-adjust: 100%;
     -webkit-text-size-adjust: 100%;
-    //overflow-x: hidden; //Avoid horizontal scroll
+    overflow-x: hidden; //Avoid horizontal scroll
 }
 input,button,textarea{font-family:inherit;}
 
@@ -254,6 +255,8 @@ line-height: 39px;
 /********  Service Section ****/
 .service {
     display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
     justify-content: space-around;
     margin-bottom: 152px;
 }
@@ -290,6 +293,8 @@ line-height: 39px;
 
 .best-seller {
     display: flex;
+    flex-wrap: wrap;
+    max-width: 100%;
     justify-content: center;
     padding: 0 10px;
     margin: 0 10px 182px ;
@@ -323,14 +328,14 @@ line-height: 39px;
 }
 
 .best-seller__row {
+    max-width: 1000px;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-self: end;
     gap: 32px;
     position: relative;
 }
 .best-seller__item {
-    
     display: flex;
     flex-direction: column;
     position: relative;
@@ -358,6 +363,7 @@ line-height: 39px;
 .best-seller-item__img{
     margin-bottom:42px ;
     flex-grow: 1;
+    max-width: 100%;
 
 }
 
@@ -411,6 +417,7 @@ line-height: 39px;
 
  /********* Referance section **********/
 .referance {
+    
     margin-bottom: 182px;
 }
 .referance__title {
@@ -474,6 +481,8 @@ line-height: 39px;
 /****** Care Section ********/
 .care {
     display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
     align-items: center;
     justify-content: space-around;
     margin: 182px 10px 210px;
@@ -564,7 +573,7 @@ footer {
 .footer-navigation__input {
     display: flex;
     align-items: center;
-    width: 463px;
+    max-width: 463px;
     border: 1px solid #FFFFFF;
     
     border-radius: 50px;
@@ -589,7 +598,7 @@ footer {
     padding: 12px 24px;
     background: linear-gradient(90deg, #2AF598 0%, #009EFD 100%);
     border-radius: 50px;  
-    width: 145px;
+    max-width: 145px;
     height: 47px;  
     text-align: center;
     font-size: 20px;
@@ -635,4 +644,114 @@ hr{
     text-align: center;
 }
 
+@media only screen and (max-width: 1400px) {
+ .best-seller__row{
+    max-width: 800px;
+ }
+ .footer__row{
+    gap: 30px;
+ }
+}
+
+@media only screen and (max-width: 1200px) {
+   .footer__navigation{
+    flex-direction: column;
+   }
+    .footer__row{
+       flex-direction: column;
+    }
+    .hero__union,.hero__dot-outer{
+        display: none;
+    }
+    
+
+   }
+
+
+   @media only screen and (max-width:800px) {
+    footer{
+        padding: 50px;
+    }
+    .best-seller__row{
+        max-width: 800px;
+        flex-wrap: wrap;
+     }
+     .referance__gallery{
+        flex-wrap: wrap;
+     }
+     header{
+        .navbar{
+            padding: 20px 0 0 0;
+            flex-wrap: wrap;
+            gap: 30px;
+            a{
+                margin-right: 10px;
+            }
+            // .navbar__checkout{
+            //     order: 2;
+                
+            // }
+            // .navbar__links{
+            //     flex-direction: column;
+            //     order: 3;
+            // }
+        }
+        .hero__title{
+            font-size:50px;
+            line-height: 57px;
+            
+        }
+        .hero__text{
+            font-size: 32px;
+            line-height: 32px;
+            max-width: 600px;
+        }
+
+    }
+
+    
+    }
+
+    @media only screen and (max-width:668px) {
+        footer{
+            padding: 10px;
+        }
+         header{
+            &::before{
+                height: 30px;
+            }
+            .navbar{
+               flex-wrap: wrap;
+                align-items: center;
+                justify-content: space-between;
+                padding: 0 10px;
+                margin-bottom: 30px;
+               
+
+            }
+            .hero__title{
+                font-size: 42px;
+                line-height: 42px;
+                
+            }
+            .hero__text{
+                font-size: 20px;
+                line-height: 20px;
+                max-width: 550px;
+            }
+            .navbar__checkout{
+                order: 2;
+                
+            }
+            .navbar__links{
+                order: 3;
+                flex: 0 1 100%;
+                align-items: center;
+                flex-direction: column;
+                
+            }
+        }
+    
+        
+        }
 

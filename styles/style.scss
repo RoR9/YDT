@@ -4,6 +4,7 @@
     padding: 0;
     margin: 0;
     border: 0;
+    outline: 3px solid limegreen !important;
 }
 *,*:before,*:after{
     -moz-box-sizing: border-box;
@@ -291,7 +292,7 @@ line-height: 39px;
     display: flex;
     justify-content: center;
     padding: 0 10px;
-    margin-bottom: 182px;
+    margin: 0 10px 182px ;
 }
 .best-seller__text {
     max-width: 363px;

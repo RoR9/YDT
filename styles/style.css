@@ -4,6 +4,7 @@
   padding: 0;
   margin: 0;
   border: 0;
+  outline: 3px solid limegreen !important;
 }
 
 *, *:before, *:after {
@@ -339,7 +340,7 @@ header::before {
       -ms-flex-pack: center;
           justify-content: center;
   padding: 0 10px;
-  margin-bottom: 182px;
+  margin: 0 10px 182px;
 }
 
 .best-seller__text {
